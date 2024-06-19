@@ -15,7 +15,7 @@ const Home = () => {
               <span className="text-accent">Fernando Soares</span>
             </h1>
             <p className="max-w-[550px] mb-9 text-white/80">
-              I'm a Frontend Developer with 3 years of experience.
+              I'm a Frontend Developer with 3+ years of experience.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
