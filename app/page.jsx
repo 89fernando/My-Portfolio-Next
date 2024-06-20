@@ -1,8 +1,11 @@
+"use client";
 import { Button } from "../components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "../components/Social";
 import Photo from "../components/Photo";
 import Stats from "../components/Stats";
+import Link from "next/link";
+
 const Home = () => {
   return (
     <section className="h-full">
@@ -18,14 +21,20 @@ const Home = () => {
               I'm a Frontend Developer with 3+ years of experience.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+              <a
+                href="/assets/Currículo Profissional Fernando Soares - 2024.pdf"
+                download
+                className="uppercase flex items-center gap-2 text-white hover:text-primary"
               >
-                <FiDownload className="text-xl" />
-                Download CV
-              </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="flex items-center gap-2"
+                >
+                  <FiDownload className="text-xl" />
+                  Download CV
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
