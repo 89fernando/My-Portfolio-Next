@@ -81,14 +81,23 @@ const Testimonials = () => {
           <div className="w-full xl:w-[100%]">
             <Swiper
               spaceBetween={30}
-              slidesPerView={2}
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                },
+                982: {
+                  slidesPerView: 2,
+                },
+                1200: {
+                  slidesPerView: 3,
+                },
+              }}
             >
               {reviews.map((review, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] absolute bg-black/10 group flex justify-center items-center bg-pink50/20 flex-col">
-                    {/* <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div> */}
+                  <div className="h-[460px] group flex justify-center items-center flex-col">
                     <div className="foto w-full h-full relative flex justify-center items-center">
                       <motion.div
                         initial={{ opacity: 0 }}
@@ -112,7 +121,7 @@ const Testimonials = () => {
                               ease: "easeInOut",
                             },
                           }}
-                          className="w-[100px] h-[100px] xl:w-[100px] xl:h-[100px] mix-blend-lighten absolute top-[10px]"
+                          className="w-[100px] h-[100px] xl:w-[100px] xl:h-[100px] mix-blend-lighten absolute top-[14px]"
                         >
                           <Image
                             src={review.image}
@@ -156,20 +165,21 @@ const Testimonials = () => {
                         </motion.svg>
                       </motion.div>
                     </div>
-                    <div>
+                    <div className="h-[1200px]">
                       <div className="relative h-full bg-[#232329] p-4 pb-2 rounded-xl">
                         {review.testimonial}
-                        <div className="text-white/60">{review.name}</div>
+                        <div className="text-white/60 py-2">{review.name}</div>
                       </div>
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
-
-              <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)]  z-20 w-full justify-between"
-                btnStyles="bg-transparent hover:text-accent-hover text-accent text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
-              />
+              <div className="flex justify-center fixed z-10 inset-x-0 bottom-12">
+                <WorkSliderBtns
+                  containerStyles="flex gap-2"
+                  btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                />
+              </div>
             </Swiper>
           </div>
         </div>
