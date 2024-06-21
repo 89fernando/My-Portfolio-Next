@@ -12,9 +12,10 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-0 xl:pb-3">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <h1 className="h1 mb-6">
-              Hello I'm <br />{" "}
+              Hello I&apos;m <br />{" "}
               <span className="text-accent">Fernando Soares</span>
             </h1>
+
             <p className="mb-9 text-white/80 text-xl">
               Frontend Developer with 3+ years of experience.
             </p>
