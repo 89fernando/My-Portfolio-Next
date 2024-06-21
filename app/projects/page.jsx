@@ -110,7 +110,7 @@ const Projects = () => {
                 {project.category}
               </h2>
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="grid grid-cols-2 gap-4 md:grid-cols-4">
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-xl text-accent">
                     {item.name}
@@ -118,6 +118,7 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
+
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4">
                 {project.live ? (
