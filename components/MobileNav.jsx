@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -26,10 +27,15 @@ const links = [
     path: "/contact",
   },
 ];
+
 const MobileNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+
+  const closeMenu = () => setIsOpen(false);
+
   return (
-    <Sheet>
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
@@ -48,7 +54,8 @@ const MobileNav = () => {
               key={index}
               className={`${
                 link.path === pathname && "text-accent border-b-2 border-accent"
-              }text-xl capitalize hover:text-accent transition-all`}
+              } text-xl capitalize hover:text-accent transition-all`}
+              onClick={closeMenu}
             >
               {link.name}
             </Link>
