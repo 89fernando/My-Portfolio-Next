@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import { BsArrowRight, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import WorkSliderBtns from "../../components/WorkSliderBtns";
 import {
   Tooltip,

@@ -3,57 +3,69 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { RiArrowRightUpLine } from "react-icons/ri";
-import { BsArrowRight, BsGithub } from "react-icons/bs";
 import WorkSliderBtns from "../../components/WorkSliderBtns";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "../../components/ui/tooltip";
-import Link from "next/link";
 import Image from "next/image";
 
 const reviews = [
   {
     num: "01",
-    name: "Denise Giacomolli - Bazk",
+    name: "Denise Giacomolli - Product Owner",
     testimonial:
       "Fernando has a keen eye for visual details and user experience, creating intuitive and visually appealing interfaces that enhance the user experience. Your ability to translate complex requirements into elegant and simple solutions is a real differentiator.",
     image: "/assets/testimonials/Denise.jpg",
   },
   {
     num: "02",
-    name: "Marina Blum - Bazk",
+    name: "Marina Blum - Product Designer",
     testimonial:
       "The frontend that a designer needs: agile, proactive and committed to deliveries and continuous process improvement. It is the person who takes a critical and attentive approach to maintaining visual consistency, application performance and design assumptions.",
     image: "/assets/testimonials/Marina.jpg",
   },
   {
     num: "03",
+    name: "Marcelo Cure - Sr Backend Engineer",
+    testimonial:
+      "Fernando is an outstanding developer. I had the opportunity for follow and help guiding his career since the beginning, and his potential and evolution is really impressive. Fernando became a great front end developer and delivers his tasks with high quality.",
+    image: "/assets/testimonials/Marcelo.jpeg",
+  },
+  {
+    num: "04",
+    name: "Daniel Christofolli - Sr Software Developer",
+    testimonial:
+      "Fernando is a very competent, dedicated and perfectionist professional. Always seeks to implement solutions using the best market practices and does not rest until the objectives are achieved.",
+    image: "/assets/testimonials/Daniel.png",
+  },
+  {
+    num: "05",
+    name: "Rômulo Severo - Quality Assurance",
+    testimonial:
+      "I want to highlight the exceptional work done by Fernando as a front-end developer. His dedication to playing his role is evident in each screen he produces, always paying close attention to the organization and standardization of the development process.",
+    image: "/assets/testimonials/Romulo.jpeg",
+  },
+  {
+    num: "06",
     name: "Flávia Tissot - OSPA",
     testimonial:
       "He is a great professional and a great person to work with. Competent, focused and proactive in propositions.",
     image: "/assets/testimonials/Flávia.png",
   },
   {
-    num: "04",
+    num: "07",
     name: "Bruno Rudiger - IGOAL",
     testimonial:
       "With his mind always attentive to details, he always has excellent suggestions and ideas to share with the team.",
     image: "/assets/testimonials/Bruno.png",
   },
   {
-    num: "05",
+    num: "08",
     name: "Rodrigo Vieira - Grupo RBS",
     testimonial:
       "A dedicated colleague, always attentive and open to new knowledge, never stop, searching of something more. Excellent professional, very communicative.",
     image: "/assets/testimonials/Rodrigo.png",
   },
   {
-    num: "06",
-    name: "Lucas Hashiguchi - URBE.M",
+    num: "09",
+    name: "Lucas Hashiguchi - URBE.ME",
     testimonial: "Great professional, creative, dedicated and collaborative",
     image: "/assets/testimonials/Lucas.png",
   },

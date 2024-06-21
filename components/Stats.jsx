@@ -16,7 +16,7 @@ const stats = [
   },
   {
     num: 2500,
-    text: "Code commits",
+    text: "Commits",
   },
 ];
 const Stats = () => {
