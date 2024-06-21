@@ -62,12 +62,12 @@ const experience = {
     },
     {
       company: "Igoal",
-      position: "Frontend Developer Jr",
+      position: "Frontend Developer",
       duration: "2021 - 2022",
     },
     {
       company: "Vnda Ecommerce",
-      position: "Frontend Developer Jr",
+      position: "Frontend Developer",
       duration: "2021 - 2021",
     },
   ],
