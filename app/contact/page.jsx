@@ -39,9 +39,10 @@ const Contact = () => {
             <div className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl items-center">
               <h3 className="text-4xl text-accent">Let´s work together</h3>
               <p className="text-white/60">
-                If you liked my profile, don't hesitate to contact me, it will
-                be a pleasure to talk to you.
+                If you liked my profile, don&apos;t hesitate to contact me, it
+                will be a pleasure to talk to you.
               </p>
+
               <div className="flex items-center w-full justify-center">
                 <div className="flex flex-col items-center justify-center w-full">
                   <div className="text-white/60 mb-4">Send a whatsapp</div>
