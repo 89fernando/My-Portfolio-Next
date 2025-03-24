@@ -18,21 +18,6 @@ import Image from "next/image";
 const projects = [
   {
     num: "01",
-    category: "EasyControl",
-    title: "Project 1",
-    description: "Application for managing customers and tickets.",
-    stack: [
-      { name: "Next.JS" },
-      { name: "Prisma" },
-      { name: "Typescript" },
-      { name: "MongoDB" },
-    ],
-    image: "/assets/work/EasyControlThumb.png",
-    live: "https://easy-controls.vercel.app/",
-    github: "https://github.com/89fernando/easy-control",
-  },
-  {
-    num: "02",
     category: "Portfolio",
     title: "Project 2",
     description: "My first portfolio.",
@@ -47,7 +32,7 @@ const projects = [
     github: "https://github.com/89fernando/My-Portfolio-React",
   },
   {
-    num: "03",
+    num: "02",
     category: "Tetris",
     title: "Project 3",
     description: "Creation of the tetris game to practice logic.",
@@ -62,7 +47,7 @@ const projects = [
     github: "https://github.com/89fernando/tetris-game-react",
   },
   {
-    num: "04",
+    num: "03",
     category: "E-commerce",
     title: "Project 4",
     description: "Creating an e-commerce store.",
@@ -70,6 +55,21 @@ const projects = [
     image: "/assets/work/EcommerceThumb.png",
     live: "",
     github: "https://github.com/89fernando/frontend-challenge-junior",
+  },
+  {
+    num: "04",
+    category: "EasyControl",
+    title: "Project 1",
+    description: "Application for managing customers and tickets.",
+    stack: [
+      { name: "Next.JS" },
+      { name: "Prisma" },
+      { name: "Typescript" },
+      { name: "MongoDB" },
+    ],
+    image: "/assets/work/EasyControlThumb.png",
+    live: "https://easy-controls.vercel.app/",
+    github: "https://github.com/89fernando/easy-control",
   },
   {
     num: "05",
