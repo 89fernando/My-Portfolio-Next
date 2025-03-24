@@ -1,7 +1,7 @@
 "use client";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
 import { SiTailwindcss, SiTypescript, SiNextdotjs } from "react-icons/si";
-
+import { calcularExperiencia } from "../../lib/anosdeXp";
 import {
   Tabs,
   TabsList,
@@ -28,7 +28,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "3+ Years",
+      fieldValue: calcularExperiencia(),
     },
     {
       fieldName: "Nationality",
@@ -53,8 +53,13 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "For more than three years I have been developing various applications such as e-commerce, dashboards, payment engines and legacy code migration.",
+    "For over three years I have been developing several applications such as e-commerce, dashboards, payment mechanisms, application redesign and legacy code migration.",
   items: [
+    {
+      company: "PagBank",
+      position: "Frontend Software Engineer",
+      duration: "2024 - Atualmente",
+    },
     {
       company: "Bazk",
       position: "Frontend Developer",
